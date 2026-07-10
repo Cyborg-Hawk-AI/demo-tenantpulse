@@ -1,0 +1,90 @@
+{
+  "idea": {
+    "name": "TenantPulse",
+    "fingerprint": "landlord-tenant-communication-ai-automation-agent",
+    "pitch": "AI agent handles all routine tenant communications \u2014 rent reminders, maintenance updates, lease renewals.",
+    "cluster": "Rental Property Financial Tracking",
+    "target_customer": "Self-managing landlords with 2\u201315 units who handle tenant communication themselves without a property manager",
+    "core_features": [
+      "Tenant directory with lease dates, rent amount, and contact info per unit",
+      "Automated rent reminder sequence: SMS/email on day -3, day 0, day +3 of due date",
+      "Maintenance request intake form (tenant-facing link); AI drafts landlord acknowledgment and estimated timeline reply",
+      "Lease renewal alert 90/60/30 days before expiry with AI-drafted renewal offer letter",
+      "Monthly landlord summary: who paid, who is late, open maintenance tickets"
+    ],
+    "pricing_model": "Per-unit monthly subscription",
+    "price_point": "$5/unit/mo (minimum $15/mo), capped at $79/mo for 20+ units",
+    "gtm_channel": "r/landlord, r/realestateinvesting, local real estate investor meetup groups, SEO targeting 'rent reminder automation landlord'",
+    "competitive_landscape": "Buildium and AppFolio do this but cost $250+/mo and require full platform adoption; TurboTenant is free but has no AI communication automation",
+    "unfair_advantage": "Per-unit pricing makes it affordable for small landlords priced out of enterprise tools; AI drafts all outbound messages so landlord only reviews, never writes",
+    "mvp_estimate": "Next.js + Supabase + Twilio for SMS + SendGrid for email + self-hosted Mistral for message drafting; 3 weeks to MVP",
+    "agentic_automation": "Cron agent runs daily: checks rent due dates and sends reminders automatically; processes maintenance intake form submissions and drafts replies; triggers lease renewal sequences \u2014 landlord only approves edge cases flagged by confidence scoring",
+    "keywords": [
+      "landlord rent reminder automation",
+      "tenant communication software",
+      "property management SMS automation"
+    ],
+    "supporting_urls": [
+      "https://www.reddit.com/r/Notion/comments/1ue3u6b/built_a_notion_system_to_manage_my_rental/",
+      "https://www.reddit.com/r/SideProject/comments/1unp3zy/got_tired_of_juggling_spreadsheets_to_track_my/"
+    ],
+    "weighted_total": 105,
+    "checklist": {
+      "ten_plus_posts_same_pain": true,
+      "paying_for_inferior_solution": true,
+      "reachable_channel": true,
+      "mvp_under_4_weeks": true,
+      "price_point_high_enough": true,
+      "hair_on_fire": true,
+      "can_presell": true,
+      "fewer_than_3_competitors": true,
+      "ai_agent_operable": true
+    },
+    "checklist_passed": 9,
+    "momentum": "unknown",
+    "rising_queries": [],
+    "gate_result": "passed"
+  },
+  "pain_points": [
+    {
+      "problem": "Tracking clients is becoming a nightmare; HubSpot and Salesforce feel overwhelming with too many features and buttons for a freelancer's actual needs.",
+      "persona": "Freelancer with small client base",
+      "current_workaround": "Considering Excel CRM templates, Asana, or Claude Code for basic client tracking",
+      "frequency": "daily",
+      "wtp_signal": "Already paid for HubSpot and Salesforce subscriptions",
+      "url": "https://www.reddit.com/r/EntrepreneurRideAlong/comments/1ua7734/hey_everyone_ive_been_running_my_freelance/",
+      "engagement": 0,
+      "source": "reddit"
+    },
+    {
+      "problem": "Drafting customer replies across multiple languages and marketplaces is complex, requiring gathering product info, FAQs, policies, and maintaining store tone before sending.",
+      "persona": "Ecommerce seller managing multiple marketplaces",
+      "current_workaround": "Manually gathering product details, FAQs, and policies, then drafting and copying replies",
+      "frequency": "daily",
+      "wtp_signal": "Built custom macOS app (GlobalCustomer AI) to solve this problem",
+      "url": "https://www.reddit.com/r/SideProject/comments/1u7guup/i_built_a_localfirst_mac_app_that_helps_ecommerce/",
+      "engagement": 0,
+      "source": "reddit"
+    },
+    {
+      "problem": "Real estate investors struggle to track finances across multiple properties, understand true value per property, and identify which are generating cash flow vs. costing money.",
+      "persona": "Real estate investor managing multiple properties",
+      "current_workaround": "Juggling multiple spreadsheets to track properties and finances",
+      "frequency": "weekly",
+      "wtp_signal": "Built custom dashboard (Earn Clarity) to replace spreadsheets",
+      "url": "https://www.reddit.com/r/SideProject/comments/1unp3zy/got_tired_of_juggling_spreadsheets_to_track_my/",
+      "engagement": 0,
+      "source": "reddit"
+    },
+    {
+      "problem": "Managing multiple spreadsheets for rental properties is tedious and doesn't provide unified visibility into tenants, maintenance, rent tracking, and financial performance.",
+      "persona": "Landlord managing multiple rental properties",
+      "current_workaround": "Managing multiple spreadsheets or ditching property management apps entirely",
+      "frequency": "weekly",
+      "wtp_signal": "Built custom Notion system to consolidate property management",
+      "url": "https://www.reddit.com/r/Notion/comments/1ue3u6b/built_a_notion_system_to_manage_my_rental/",
+      "engagement": 0,
+      "source": "reddit"
+    }
+  ]
+}
